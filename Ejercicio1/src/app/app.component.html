@@ -1,0 +1,20 @@
+
+<!-- SE INGRESAN LAS EDADES -->
+<label for="edadUno">Edad 1:</label>
+<input type="text" id="edadUno" name="edadUno" [(ngModel)]="edadUno" placeholder="Ingrese la primera edad">
+<br>
+<label for="edadDos">Edad 2:</label>
+<input type="text" id="edadDos" name="edadDos" [(ngModel)]="edadDos" placeholder="Ingrese la segunda edad">
+<br><br>
+
+<!-- SE MUESTRA EL PROMEDIO Y LA SUMA DE LAS EDADES INGRESADAS -->
+<label for="promedio">Promedio:</label>
+<input type="number" id="promedio" name="promedio" [(ngModel)]="promedio">
+<br>
+<label for="suma">Suma</label>
+<input type="number" id="suma" name="suma" [(ngModel)]="suma">
+<br><br>
+
+<!-- SE CALCULA EL PROMEDIO Y LA SUMA -->
+<button id="calcular-btn" (click)="calcular()">Calcular</button>
+<button id="limpiar-btn" (click)="limpiar()">Limpiar</button>
